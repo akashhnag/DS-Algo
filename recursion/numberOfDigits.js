@@ -1,6 +1,13 @@
-function numberOfDigits(n,r){
-  if(r<=0){
+//count number of digits in a number
+let c = 0
+function numberOfDigits(n, c) {
+  if (n <= 0) {
+    console.log(c);
     return
   }
-  console.log(n%10);
+  c++;
+  numberOfDigits(parseInt(n / 10), c)
 }
+
+numberOfDigits(234234, c)
+

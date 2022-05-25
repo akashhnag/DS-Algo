@@ -1,7 +1,9 @@
-function printNumbersInReverse(n){
-  if(n===0) return;
+//print natural numbers in reverse
+
+function printNumbersInReverse(n) {
+  if (n === 0) return;
   console.log(n);
-  printNumbersInReverse(n-1)
+  printNumbersInReverse(n - 1)
 }
 
 printNumbersInReverse(7)
